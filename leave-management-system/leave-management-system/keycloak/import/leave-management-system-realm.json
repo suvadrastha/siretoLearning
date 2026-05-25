@@ -1,0 +1,53 @@
+{
+  "realm": "leave-management-system",
+  "enabled": true,
+  "registrationAllowed": false,
+  "loginWithEmailAllowed": true,
+  "duplicateEmailsAllowed": false,
+  "resetPasswordAllowed": true,
+  "editUsernameAllowed": false,
+  "sslRequired": "external",
+  "clients": [
+    {
+      "clientId": "leave-management-web",
+      "name": "Leave Management Web",
+      "enabled": true,
+      "protocol": "openid-connect",
+      "clientAuthenticatorType": "client-secret",
+      "secret": "emanbfVfDLqtnkmRchIoLriPDYzd7tYz",
+      "publicClient": false,
+      "bearerOnly": false,
+      "consentRequired": false,
+      "standardFlowEnabled": true,
+      "implicitFlowEnabled": false,
+      "directAccessGrantsEnabled": true,
+      "serviceAccountsEnabled": false,
+      "authorizationServicesEnabled": false,
+      "redirectUris": [
+        "http://localhost:5173/*"
+      ],
+      "webOrigins": [
+        "http://localhost:5173"
+      ],
+      "attributes": {
+        "oauth2.device.authorization.grant.enabled": "false",
+        "oidc.ciba.grant.enabled": "false"
+      }
+    }
+  ],
+  "roles": {
+    "realm": [],
+    "client": {
+      "leave-management-web": [
+        {
+          "name": "role_admin",
+          "description": "Admin role for the leave management system"
+        },
+        {
+          "name": "role_user",
+          "description": "Employee role for the leave management system"
+        }
+      ]
+    }
+  }
+}
