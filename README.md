@@ -108,7 +108,6 @@ Form fields:
 ```text
 grant_type=password
 client_id=leave-management-web
-client_secret=emanbfVfDLqtnkmRchIoLriPDYzd7tYz
 username=<keycloak-username>
 password=<keycloak-password>
 ```
