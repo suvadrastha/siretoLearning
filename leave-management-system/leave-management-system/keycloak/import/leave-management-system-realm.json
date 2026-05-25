@@ -13,8 +13,6 @@
       "name": "Leave Management Web",
       "enabled": true,
       "protocol": "openid-connect",
-      "clientAuthenticatorType": "client-secret",
-      "secret": "emanbfVfDLqtnkmRchIoLriPDYzd7tYz",
       "publicClient": false,
       "bearerOnly": false,
       "consentRequired": false,
