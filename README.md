@@ -40,7 +40,6 @@ The compose setup imports this Keycloak configuration on first startup:
 
 - Realm: `leave-management-system`
 - Client ID: `leave-management-web`
-- Client secret: `emanbfVfDLqtnkmRchIoLriPDYzd7tYz`
 - Client roles: `role_admin`, `role_user`
 - Frontend origin: `http://localhost:5173`
 
@@ -109,7 +108,6 @@ Form fields:
 ```text
 grant_type=password
 client_id=leave-management-web
-client_secret=emanbfVfDLqtnkmRchIoLriPDYzd7tYz
 username=<keycloak-username>
 password=<keycloak-password>
 ```
