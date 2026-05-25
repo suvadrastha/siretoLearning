@@ -21,7 +21,6 @@ public class UserController {
 
     @GetMapping("/me")
     public User getCurrentUser(@AuthenticationPrincipal Jwt jwt) {
-        System.out.println("Received JWT: " + jwt);
         return userService.getOrCreateUserFromJwt(jwt);
     }
 

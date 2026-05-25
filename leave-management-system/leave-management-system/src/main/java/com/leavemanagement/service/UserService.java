@@ -28,9 +28,7 @@ public class UserService {
 
     public User getOrCreateUserFromJwt(Jwt jwt) {
         String keycloakUserId = jwt.getSubject();
-//        System.out.println("skdnjsf"+ keycloakUserId);
         Role role = extractRole(jwt);
-//        System.out.println("Extracted role: " + role);
 
 
         return userRepository.findByKeycloakUserId(keycloakUserId)
